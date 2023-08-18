@@ -1,0 +1,34 @@
+.footerdiv{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.logoblanc {
+    margin: 66px 0 32px 0;
+}
+
+.footerdiv h5 {
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+
+}
+
+
+/* *****************************************  Mode téléphone  ***************************************** */
+
+@media screen and (max-width: 768px) {
+
+    .footerdiv {
+        margin-top: 40px;
+    }
+}

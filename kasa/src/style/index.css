@@ -1,0 +1,35 @@
+:root {
+  --main: #FF6060;
+  --secondary : #F6F6F6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+
+}
+
+
+/* *****************************************  Mode téléphone  ***************************************** */
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}
