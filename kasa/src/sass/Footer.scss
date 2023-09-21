@@ -1,4 +1,7 @@
-.footerdiv{
+footer{
+    position: flex;
+    bottom: 0;
+    width: 100%;
     color: white;
     background-color: black;
     display: flex;
@@ -11,7 +14,7 @@
     margin: 66px 0 32px 0;
 }
 
-.footerdiv h5 {
+footer h5 {
     padding-bottom: 30px;
     margin: 0;
 }
@@ -28,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .footerdiv {
+    footer {
         margin-top: 40px;
     }
 }

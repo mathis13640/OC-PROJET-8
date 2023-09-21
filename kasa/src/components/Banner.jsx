@@ -2,7 +2,7 @@ import React from "react";
 
 function Banner(props) {
   return (
-    <div className="miseenavant">
+    <div className="placement">
       <img src={props.image} className={props.namealt} alt={props.namealt} />
       {props.h1 && <h1>{props.h1}</h1>}
     </div>

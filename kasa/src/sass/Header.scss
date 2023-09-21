@@ -1,4 +1,4 @@
-.headdiv {
+header {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -11,7 +11,7 @@
     width: 210px;
 }
 
-.headdiv ul {
+header ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -22,6 +22,7 @@
 ul a {
     text-decoration: none;
     font-weight: 500;
+    color : var(--main);
 }
 
 ul a.active {
@@ -38,7 +39,7 @@ ul a.active {
         height: 58px;
     }
 
-    .headdiv ul {
+    header ul {
         font-size: 18px;
     }
 }
@@ -52,7 +53,7 @@ ul a.active {
         height: 47px;
     }
 
-    .headdiv ul {
+    header ul {
         font-size: 12px;
         text-transform: uppercase;
         gap: 10px;

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: var(--main);
+}
+
+.Kasalogo {
+  width: 210px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 55px;
+  font-size: 24px;
+}
+
+ul a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--main);
+}
+
+ul a.active {
+  border-bottom: 2px solid var(--main);
+}
+
+/* *****************************************  Mode tablette  ***************************************** */
+@media screen and (max-width: 992px) {
+  .Kasalogo {
+    width: 180px;
+    height: 58px;
+  }
+  header ul {
+    font-size: 18px;
+  }
+}
+/* *****************************************  Mode téléphone  ***************************************** */
+@media screen and (max-width: 768px) {
+  .Kasalogo {
+    width: 145px;
+    height: 47px;
+  }
+  header ul {
+    font-size: 12px;
+    text-transform: uppercase;
+    gap: 10px;
+    padding-left: 0px;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

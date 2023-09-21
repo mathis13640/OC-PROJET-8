@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import falaise from "../assets/falaise.png";
-import "../style/Home.css";
+import "../css/Home.css";
 
 function Home() {
   return (

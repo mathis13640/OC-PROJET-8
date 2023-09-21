@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/Home.css';
+import '../css/Home.css';
 import { NavLink } from "react-router-dom";
 import Logement from '../data/logements.json';
 
@@ -10,7 +10,7 @@ function Card() {
           {Logement.map((detail) => {
               return (
                   <div className="locate" key={detail.id}>
-                      <NavLink to={`/fiche/${detail.id}`}><img src={detail.cover} alt={detail.title}/></NavLink> 
+                      <NavLink to={`/logement/${detail.id}`}><img src={detail.cover} alt={detail.title}/></NavLink>
                       <p>{detail.title}</p>
                   </div>
               )
