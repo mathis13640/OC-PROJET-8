@@ -7,11 +7,11 @@ import Flogement from "../pages/Flogement";
 function RoutesReact() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home /> /*default*/} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/logement/:id" element={<Flogement />} />
-      {/* Route for all other unknown pages, displaying the Error component */}
+      {/*Route pour toutes les autres pages inconnues, affichant le composant Erreur*/}
       <Route path="*" element={<Error404 />} />
     </Routes>
   );
