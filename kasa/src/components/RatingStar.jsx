@@ -3,14 +3,29 @@ import starOn from '../assets/staron.png';
 import starOff from '../assets/staroff.png';
 
 function RatingStars(props) {
+    // Récupération de la note (rating) depuis les props
     const rating = props.props;
-    return (  <span className="star">
-                    <img src={starOn}  alt="star" />  
-                    <img src={rating >= 2 ? starOn : starOff} alt="star" />
-                    <img src={rating >= 3 ? starOn : starOff} alt="star" />
-                    <img src={rating >= 4 ? starOn : starOff} alt="star" />
-                    <img src={rating >= 5 ? starOn : starOff} alt="star" />
-                </span>)
+
+    return (
+        // Conteneur pour les étoiles de notation
+        <span className="star">
+            {/* La première étoile est toujours allumée */}
+            <img src={starOn}  alt="star" />
+
+            {/* Si la note est supérieure ou égale à 2, affichez l'étoile allumée, sinon éteinte */}
+            <img src={rating >= 2 ? starOn : starOff} alt="star" />
+
+            {/* Si la note est supérieure ou égale à 3, affichez l'étoile allumée, sinon éteinte */}
+            <img src={rating >= 3 ? starOn : starOff} alt="star" />
+
+            {/* Si la note est supérieure ou égale à 4, affichez l'étoile allumée, sinon éteinte */}
+            <img src={rating >= 4 ? starOn : starOff} alt="star" />
+
+            {/* Si la note est égale à 5, affichez l'étoile allumée, sinon éteinte */}
+            <img src={rating >= 5 ? starOn : starOff} alt="star" />
+        </span>
+    )
 }
 
+// Exportation du composant pour une utilisation dans d'autres parties de l'application
 export default RatingStars;

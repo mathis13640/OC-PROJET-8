@@ -4,8 +4,10 @@ import flecheD from '../assets/arrowright.png';
 import flecheG from '../assets/arrowleft.png';
 
 function Collapse({ i, title, texte }) {
-    const [selectedIndex, setSelectedIndex] = useState(null); //hook useState pour créer une variable d'état appelée selectedIndex et une fonction setSelectedIndex pour mettre à jour sa valeur
-  
+   //hook useState pour créer une variable d'état appelée selectedIndex 
+    //et une fonction setSelectedIndex pour mettre à jour sa valeur
+    const [selectedIndex, setSelectedIndex] = useState(null); 
+    
     // fonction toggle est utilisée pour basculer l'index sélectionné
     const toggle = () => {
       setSelectedIndex((prevIndex) => (prevIndex === i ? null : i));

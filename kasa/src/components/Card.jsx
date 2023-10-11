@@ -6,6 +6,7 @@ import Logement from '../data/logements.json';
 
 function Card() {
   return (
+    // Conteneur principal pour les cartes de logement
       <div className='locations'>
           {Logement.map((detail) => {
               return (

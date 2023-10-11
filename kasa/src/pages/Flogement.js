@@ -24,7 +24,7 @@ function FLogement() {
   // Récupération des détails du logement
   const destination = Logement.find((lieu) => lieu.id === id) || {};
 
-  // Destructuration des propriétés du logement
+  // Destructuration (extraction) des propriétés du logement
   const {
     title,
     location,
