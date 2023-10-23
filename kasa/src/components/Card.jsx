@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/Home.css';
+import '../sass/_Home.scss';
 import { NavLink } from "react-router-dom";
 import Logement from '../data/logements.json';
 

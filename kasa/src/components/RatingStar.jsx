@@ -27,5 +27,4 @@ function RatingStars(props) {
     )
 }
 
-// Exportation du composant pour une utilisation dans d'autres parties de l'application
 export default RatingStars;
