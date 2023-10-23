@@ -4,7 +4,7 @@ import starOff from '../assets/staroff.png';
 
 function RatingStars(props) {
     // Récupération de la note (rating) depuis les props
-    const rating = props.props;
+    const rating = props.rating;
 
     return (
         // Conteneur pour les étoiles de notation
@@ -22,7 +22,7 @@ function RatingStars(props) {
             <img src={rating >= 4 ? starOn : starOff} alt="star" />
 
             {/* Si la note est égale à 5, affichez l'étoile allumée, sinon éteinte */}
-            <img src={rating >= 5 ? starOn : starOff} alt="star" />
+            <img src={rating === 5 ? starOn : starOff} alt="star" />
         </span>
     )
 }

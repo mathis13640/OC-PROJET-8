@@ -65,7 +65,7 @@ function FLogement() {
             </div>
           </span>
           {/* Affichage de la note */}
-          <RatingStars props={destination.rating} />
+          <RatingStars rating={destination.rating} />
         </article>
       </section>
       {/* Affichage de la description et des équipements */}
