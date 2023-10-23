@@ -3,6 +3,7 @@ import { useState } from "react";
 import flecheD from '../assets/arrowright.png';
 import flecheG from '../assets/arrowleft.png';
 
+//suivre l'index de l'élément actuellement sélectionné
 function Collapse({ i, title, texte }) {
    //hook useState pour créer une variable d'état appelée selectedIndex 
     //et une fonction setSelectedIndex pour mettre à jour sa valeur

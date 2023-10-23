@@ -5,7 +5,7 @@ import Slideshow from "../components/Slideshow ";
 import Logement from "../data/logements.json";
 import Collapse from "../components/Collapse";
 import RatingStars from "../components/RatingStar";
-import "../css/Logement.css";
+import "../sass/_Logement.scss";
 
 function FLogement() {
   // Récupération de l'ID depuis les paramètres de l'URL
@@ -65,7 +65,7 @@ function FLogement() {
             </div>
           </span>
           {/* Affichage de la note */}
-          <RatingStars props={destination.rating} />
+          <RatingStars rating={destination.rating} />
         </article>
       </section>
       {/* Affichage de la description et des équipements */}
