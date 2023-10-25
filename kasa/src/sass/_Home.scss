@@ -37,7 +37,7 @@ h1 {
     justify-content: space-around;
 	grid-template-columns: auto auto auto;
     column-gap: 10px;
-    background-color: var(--secondary);
+    background-color: $secondary-color;
     border-radius: 25px;
     padding: 0 2vw;
     padding-top: 50px;

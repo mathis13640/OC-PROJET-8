@@ -4,28 +4,19 @@ import flecheD from '../assets/arrowright.png';
 import flecheG from '../assets/arrowleft.png';
 
 function Slideshow(props) {
-    // État pour gérer l'index de l'image actuellement affichée
     const [index, setIndex] = useState(0);
-
-    // Fonction pour naviguer vers l'image précédente
     const goToPrevious = () => {
-        // Vérifie si l'image actuelle est la première
         const firstImage = index === 0;
-        // Si c'est la première image, passez à la dernière, sinon passez à l'image précédente
         const newIndex = firstImage ? props.nbPictures - 1 : index - 1;
         setIndex(newIndex);
     }
 
-    // Fonction pour naviguer vers l'image suivante
     const goToNext = () => {
-        // Vérifie si l'image actuelle est la dernière
         const lastImage = index === props.nbPictures - 1;
-        // Si c'est la dernière image, retournez à la première, sinon passez à l'image suivante
         const newIndex = lastImage ? 0 : index + 1;
         setIndex(newIndex);
     }
 
-    // Vérification pour s'assurer que props.destination.pictures est défini
     const backgroundImage = props.destination && props.destination.pictures 
                             ? props.destination.pictures[index] 
                             : null;

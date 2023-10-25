@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import flecheD from '../assets/arrowright.png';
-import flecheG from '../assets/arrowleft.png';
+import flecheU from '../assets/arrowleft.png';
 
 //suivre l'index de l'élément actuellement sélectionné
 function Collapse({ i, title, texte }) {
@@ -18,7 +18,7 @@ function Collapse({ i, title, texte }) {
       <>
         <span className="spantitle" onClick={toggle}>
           <span className="spanP">{title}</span>
-          <img src={selectedIndex === i ? flecheG : flecheD} alt="flèche" />
+          <img src={selectedIndex === i ? flecheU : flecheD} alt="flèche" />
         </span>
         <div className={`texte ${selectedIndex === i ? 'show' : ''}`}>
           <span className="spanP">{texte}</span>                    

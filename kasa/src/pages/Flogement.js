@@ -86,5 +86,4 @@ function FLogement() {
   );
 }
 
-// Exportation du composant
 export default FLogement;
