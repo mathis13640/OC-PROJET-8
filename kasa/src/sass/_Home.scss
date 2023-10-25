@@ -1,7 +1,9 @@
+@import 'variables';
+
 .mainhome {
     width: 90%;
     margin: 0 auto;
-    color: var(--main);
+    color: $primary-color;
     margin-top: 60px;
 }
 

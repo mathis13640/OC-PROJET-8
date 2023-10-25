@@ -1,10 +1,12 @@
+@import 'variables';
+
 header {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
     padding-top: 40px;
-    color: var(--main);
+    color: $primary-color;
 }
 
 .Kasalogo {
@@ -22,11 +24,11 @@ header ul {
 ul a {
     text-decoration: none;
     font-weight: 500;
-    color : var(--main);
+    color : $primary-color;
 }
 
 ul a.active {
-    border-bottom: 2px solid var(--main);
+    border-bottom: 2px solid $primary-color;
     
 }
 

@@ -1,7 +1,9 @@
+@import 'variables';
+
 .mainlogement {
     width: 90%;
     margin: 0 auto;
-    color: var(--main);    
+    color: $primary-color;    
     margin-bottom: 80px;
 }
 
@@ -85,7 +87,7 @@ article h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main);
+    background-color: $primary-color;
     font-weight: 500;
     border-radius: 10px;
     padding: 3px 10px;
@@ -142,7 +144,7 @@ span div{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main);
+    background-color: $primary-color;
     border-radius: 10px;
     height: 52px;
     color: white;

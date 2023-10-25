@@ -1,14 +1,16 @@
+@import 'variables';
+
 .mainAbout {
     width: 90%;
     margin: 0 auto;
-    color: var(--main);
+    color: $primary-color;
 }
 
 .placement {
     padding-top: 20px;
     margin-bottom: 0;
     position:relative;
-/*e*/}
+}
 
 .location2 {
     width: 100%;
@@ -45,7 +47,7 @@ span {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main);
+    background-color: $primary-color;
     border-radius: 10px;
     height: 52px;
     color: white;
@@ -65,7 +67,7 @@ span {
 }
 
 .texte {
-    background-color: var(--secondary);
+    background-color: $secondary-color;
     width: 100%;
     height: 100%;
     border-radius: 10px;
