@@ -233,6 +233,11 @@ span div{
         height: 225px;
     }
 
+    .image-slide{
+        height: 310px!important;
+    
+    }
+
     .arrow {
         height: 20px;
     }
