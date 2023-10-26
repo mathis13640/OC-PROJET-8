@@ -3,7 +3,6 @@ import starOn from '../assets/staron.png';
 import starOff from '../assets/staroff.png';
 
 function RatingStars(props) {
-    // Récupération de la note (rating) depuis les props
     const rating = props.rating;
 
     return (
