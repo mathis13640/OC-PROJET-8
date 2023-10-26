@@ -11,7 +11,9 @@ function Card() {
           {Logement.map((detail) => {
               return (
                   <div className="locate" key={detail.id}>
-                      <NavLink to={`/logement/${detail.id}`}><img src={detail.cover} alt={detail.title}/></NavLink>
+                      <NavLink to={`/logement/${detail.id}`}>
+                        <img src={detail.cover} alt={detail.title}/>
+                        </NavLink>
                       <p>{detail.title}</p>
                   </div>
               )
