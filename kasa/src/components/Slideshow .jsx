@@ -5,6 +5,7 @@ import flecheG from '../assets/arrowleft.png';
 
 function Slideshow(props) {
     const [index, setIndex] = useState(0);
+
     const goToPrevious = () => {
         const firstImage = index === 0;
         const newIndex = firstImage ? props.nbPictures - 1 : index - 1;
@@ -16,7 +17,7 @@ function Slideshow(props) {
         const newIndex = lastImage ? 0 : index + 1;
         setIndex(newIndex);
     }
-
+    {/*vérifie si props.destination et props.destination.pictures existent*/}
     const backgroundImage = props.destination && props.destination.pictures 
                             ? props.destination.pictures[index] 
                             : null;
