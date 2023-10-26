@@ -2,7 +2,7 @@ import React from "react";
 import Mountain from "../assets/themountain.png";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
-import "../sass/_About.scss";
+import "../css/About.css";
 
 const aboutsection = [
   {
