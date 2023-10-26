@@ -63,18 +63,29 @@ h1 {
     width: 100%;
     border-radius: 10px;
     position: absolute;
+    z-index: 1; 
 }
 
 .locate p {
     color: white;
     padding-left: 20px;
     position: absolute;
-    z-index: 2;
+    z-index: 3; 
     bottom: 20px;
     left: 0px;
 }
 
-
+.locate a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 2; 
+}
 /* *****************************************  Mode tablette  ***************************************** */
 
 @media screen and (max-width: 992px) {
